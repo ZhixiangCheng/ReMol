@@ -1,2 +1,2 @@
 # ReMol
-![image] (img/ReMol.png)
+![image](img/ReMol.png)
