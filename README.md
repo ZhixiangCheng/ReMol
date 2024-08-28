@@ -47,6 +47,16 @@ All processed finetuning datasets can be download in [link](https://drive.google
 | activity cliff estimation        | MoleculeACE |   [MoleculeACE](https://github.com/molML/MoleculeACE/tree/main/MoleculeACE/Data/benchmark_data)                    |   Each cluster was then split into a training set (80\%) and a testing set (20\%) using stratified random sampling based on the activity cliff label.          |
 
 **2.  Download pre-trained ReMol**<br>  
-You can download pre-trained model ([ReMol](https://drive.google.com/file/d/1WuL3TP2tW2c2QF7vVPnj-FLZqEobZIql/view?usp=sharing) and push it into the folder ckpts/ <br> 
+You can download pre-trained model [ReMol](https://drive.google.com/file/d/1WuL3TP2tW2c2QF7vVPnj-FLZqEobZIql/view?usp=sharing) and push it into the folder ckpts/ <br> 
 
 **3. Finetune with pre-trained ReMol on various downstream tasks** <br>  
+For example, you can run the following code to chemical reaction classification:
+```
+python finetuning_reaction_classfication.py --gpu 0 \
+                   --save_finetune_ckpt 1 \
+                   --dataroot ./datasets/finetuning/schneider \
+                   --resume ReMol \
+                   --lr 5e-3 \
+                   --batch 16 \
+                   --epochs 100 \
+```
