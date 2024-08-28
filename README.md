@@ -36,13 +36,12 @@ python pretrain.py --nodes 1 \
                    --MRCI_lambda 1 \
 ```
 ## Finetuning
-|                                  |             |                        |             |
 |----------------------------------|-------------|------------------------|-------------|
 | Task                             | Dataset     | Original download link | Description |
-| reaction product prediction      | USPTO-479k  |                        |             |
-| chemical reaction classification | Schneider   |                        |             |
-| molecular property prediction    | MoleculeNet |                        |             |
-| activity cliff estimation        | MoleculeACE |                        |             |
+| reaction product prediction      | USPTO-479k  |   [MolR](https://github.com/hwwang55/MolR/blob/master/data/USPTO-479k/USPTO-479k.zip)                    |     The dataset contains 478,612 chemical reactions, divided into training, validation, and test sets, containing 408,673, 29,973, and 39,966 reactions respectively.        |
+| chemical reaction classification | Schneider   |   [DRFP](https://pubs.acs.org/doi/suppl/10.1021/ci5006614/suppl_file/ci5006614_si_002.zip)                     |  The dataset contains 38,800 chemical reactions, divided into training, validation, and test sets, containing 31,002, 3,896, and 3,902 reactions respectively.           |
+| molecular property prediction    | MoleculeNet |   [KPGT](https://figshare.com/s/aee05cc329434b629c82)                    |   These datasets, eight are designed for classification tasks and the remaining three are designed for regression tasks.          |
+| activity cliff estimation        | MoleculeACE |   [MoleculeACE](https://github.com/molML/MoleculeACE/tree/main/MoleculeACE/Data/benchmark_data)                    |   Each cluster was then split into a training set (80\%) and a testing set (20\%) using stratified random sampling based on the activity cliff label.          |
 
 
 All processed finetuning datasets can be download in [link](https://drive.google.com/file/d/1I2O0AhTO3CGaYMsQl_EnKusmJw6ZXC8y/view?usp=sharing)
