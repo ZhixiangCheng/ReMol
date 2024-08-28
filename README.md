@@ -36,6 +36,9 @@ python pretrain.py --nodes 1 \
                    --MRCI_lambda 1 \
 ```
 ## Finetuning
+
+**1.  downstream dataset**<br>  
+All processed finetuning datasets can be download in [link](https://drive.google.com/file/d/1I2O0AhTO3CGaYMsQl_EnKusmJw6ZXC8y/view?usp=sharing), and put it into ./datasets/finetuning/<br>  
 | Task                             | Dataset     | Original download link | Description |
 |----------------------------------|-------------|------------------------|-------------|
 | reaction product prediction      | USPTO-479k  |   [MolR](https://github.com/hwwang55/MolR/blob/master/data/USPTO-479k/USPTO-479k.zip)                    |     The dataset contains 478,612 chemical reactions, divided into training, validation, and test sets, containing 408,673, 29,973, and 39,966 reactions respectively.        |
@@ -43,5 +46,7 @@ python pretrain.py --nodes 1 \
 | molecular property prediction    | MoleculeNet |   [KPGT](https://figshare.com/s/aee05cc329434b629c82)                    |   These datasets, eight are designed for classification tasks and the remaining three are designed for regression tasks.          |
 | activity cliff estimation        | MoleculeACE |   [MoleculeACE](https://github.com/molML/MoleculeACE/tree/main/MoleculeACE/Data/benchmark_data)                    |   Each cluster was then split into a training set (80\%) and a testing set (20\%) using stratified random sampling based on the activity cliff label.          |
 
+**2.  Download pre-trained ReMol**<br>  
+You can download pre-trained model ([ReMol](https://drive.google.com/file/d/1WuL3TP2tW2c2QF7vVPnj-FLZqEobZIql/view?usp=sharing) and push it into the folder ckpts/ <br> 
 
-All processed finetuning datasets can be download in [link](https://drive.google.com/file/d/1I2O0AhTO3CGaYMsQl_EnKusmJw6ZXC8y/view?usp=sharing)
+**3. Finetune with pre-trained ReMol on various downstream tasks** <br>  
