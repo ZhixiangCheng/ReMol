@@ -1,6 +1,7 @@
 # ReMol
 ![image](img/ReMol.png)
 
+Official PyTorch implementation of "ReMol: A Chemical Reaction Knowledge-guided Self-supervised Molecular Image Representation Learning Framework" (IEEE JBHI 2026)
 
 ## Install environment
 
